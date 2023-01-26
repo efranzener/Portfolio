@@ -1,0 +1,119 @@
+.homePage {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  color: rgb(0, 0, 86);
+  overflow:hidden;
+  background-color: #EA9A27;
+  color: white;
+  z-index:1;
+}
+  
+h1 {
+  font-size:xx-large;
+}
+
+
+.homepagePic {
+  margin-bottom: -3%;
+  width: 100%;
+  
+}
+
+.navBar {
+  font-size: large;
+  font-weight: bold;
+  color: white !important;
+  
+}
+
+.navBar .myLogo {
+  font-size: xx-large;
+  font-weight:bold; 
+  color: whitesmoke
+}
+
+.sectionHeader {
+  vertical-align: bottom;
+  font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+  font-size: 1000%;
+  font-weight: 800%;
+  letter-spacing: -0.02em;
+  text-align: start;
+  position: relative;
+  pointer-events: none;
+  padding-top: 3%;
+  margin-left: 26%;
+  z-index:1;
+  /* color: darkblue; */
+  
+  
+  
+
+}
+
+
+
+.myStickyBox {
+  position: fixed;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 10%;
+  text-align: center;
+  z-index:2;
+}
+
+.myStickyBox a {
+display: block;
+width: 40%;
+/* padding-right: 1%; */
+padding-top: 5%;
+padding-bottom: 5%;
+text-align: center;
+
+}
+
+.linkedin{
+color: #007bb5;
+background: white;
+
+}
+
+.github {
+  color: black;
+  background: white;
+}
+
+.email {
+  color: black;
+  background:white;
+}
+
+.footer {
+  
+  background-color: white
+ 
+}
+
+.dogWalkers {
+  z-index: 2;
+  /* position:relative; */
+  /* background-color: #EA9A27; */
+}
+
+.movieRating {
+  background-color: teal;
+  margin-left: 5%;
+}
+
+/* .portfolioProject {
+  background-color: yellow;
+} */
+
+
+
+.projectsSection {
+  background-color: white;
+  
+}
