@@ -33,7 +33,7 @@ function App() {
         </BrowserRouter>
         
       </section>
-      <section ><Projects/></section>
+      {/* <section ><Projects/></section> */}
         
     </div>
   );

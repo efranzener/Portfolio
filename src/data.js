@@ -4,7 +4,7 @@
 
 const projects = { project1:
     {
-        title: 'Vowvow - Dog Walkers',
+        title: 'Dog Walkers Web App',
         technologies: ['Python, Flask, Java Script, HTML, CSS, PostgreSQL'],
         description: 'A full-stack web application for dog owners to find and book dog walkers',
         image:'/images/vowvow.png',
@@ -22,8 +22,8 @@ const projects = { project1:
         title: 'Portfolio',
         technologies: ["React"], 
         description: 'A front-end web aplication that allow users to learn more about my work and to directly connect with me',
-        image:'/images/vowvow.png',
-        link:'',
+        image:'/images/character15.png',
+        link:'https://github.com/efranzener/Portfolio',
     }
     }
 

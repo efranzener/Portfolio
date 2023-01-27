@@ -96,22 +96,84 @@ background: white;
  
 }
 
-.dogWalkers {
-  z-index: 2;
-  /* position:relative; */
-  /* background-color: #EA9A27; */
+
+
+.projectsHeader {
+  background-color: white;
+  font-size: 20vh;
+  font-weight: 80vh;
+  letter-spacing: -0.02em;
+  z-index: 3;
+  text-align: start;
 }
 
-.movieRating {
+
+
+.projectOne {
+  background-color:#EA9A27;
+  text-align: start;
+  max-width: 100%;
+  min-width: 100%;
+  
+}
+
+.projectOne > img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.projectTwo {
+  text-align: start;
+  color: black;
+  
+  background-color:teal;
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+
+.projectTwo > img {
+  max-width: 100%;
+  margin-top: 0%;
+}
+
+
+.projectThree {
+  text-align: start;
+  color: black;
+  font-size: 8vh;
+  background-color: orange;
+  /* max-height: 50%;
+  min-width: 90%;
+  max-width: 99%; */
+  
+}
+
+.projectThreeContainer{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: orange;
+ 
+}
+
+.projectThreeh2{
+  width: 100%;
+  background-color: orange;
+  
+  
+}
+
+/* .movieRating {
   background-color: teal;
   margin-left: 5%;
-}
-
-/* .portfolioProject {
-  background-color: yellow;
+  padding: 10%;
+  
 } */
 
-
+.portfolioHeader {
+  
+  z-index: 2;
+}
 
 .projectsSection {
   background-color: white;
