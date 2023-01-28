@@ -18,14 +18,6 @@ const stickyNote = (
 
   );
 
-// function Footer () {
-
-//     return(
-//         <div className="footer">
-//             <p>Hello</p>
-//         </div>
-//     )
-// }
 function SharedLayout () {
     
     return (

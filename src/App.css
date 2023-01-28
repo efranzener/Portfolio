@@ -23,7 +23,7 @@ h1 {
   font-size: large;
   font-weight: bold;
   color: white !important;
-  
+
 }
 
 .navBar .myLogo {
@@ -178,4 +178,91 @@ background: white;
 .projectsSection {
   background-color: white;
   
+}
+
+.contactForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+.formContainer {
+  display: table;
+  background-color: whitesmoke;
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+.formContainer > h2 {
+  justify-content: center;
+  color: orangered;
+  font-size: 2em;
+  padding-top: 1vh;
+  font-weight:bolder ;
+  
+}
+.formContainer > div{
+  display:table-row;
+}
+
+.formContainer > div > label,
+.formContainer > div > textarea {
+  margin: 0 1vw 0 1vw;
+  padding: 0 1vw 0 1vw;
+  display: flex;
+  color: darkcyan;
+  font-size: 1.2em;
+  width: 35vw;
+}
+
+.formContainer > div > label {
+  font-weight: bold;
+}
+
+.formContainer > div > input{
+  color: black;
+  font-size: 1.2em;
+  width: 35vw;
+  margin: 0 2vw 2vh 2vw;
+  padding: 1vh 1vw 1vw 1vh;
+  border: solid 1px;
+  border-color: lightgray;
+  border-radius: 5px;
+}
+
+
+.formContainer > div> textarea {
+  width: 35vw;
+  height: 15vh;
+  color: black;
+  margin: 0 2vw 2vh 2vw;
+  border: solid 1px;
+  border-color: lightgray;
+  border-radius: 5px;
+
+}
+
+.formContainer > input {
+  width: 5vw;
+  height: 4vh;
+  color:  rgb(0, 18, 83);
+  margin-bottom: 1vh;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.alertMessage{
+  width: 40vw;
+  height: 20vh;
+  margin: 1vh auto 0 auto;
+  padding: 1vh;
+  font-size: 1.2em;
+}
+
+.projectPage {
+  background-color: black;
+  opacity: 0.9;
+  padding: 2%;
 }
