@@ -1,43 +1,94 @@
 import React from 'react';
 import projects from '../data.js';
 
-import Container from 'react-bootstrap/Container';
+// import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+// import Image from 'react-bootstrap/Image';
+
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
+import IconButton from '@mui/material/IconButton';
+// import InfoIcon from '@mui/icons-material/Info';
+
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
+function srcset(image, width, height, rows = 1, cols = 1) {
+    return {
+      src: `${image}?w=${width * cols}&h=${height * rows}&fit=clamp&auto=format`,
+      srcSet: `${image}?w=${width * cols}&h=${height * rows
+      }&fit=clamp&auto=format&dpr=2 2x`,
+    };
+  }
 
+  
 function Projects () {
-
+    
 
     return (
-            <Container>
-                <Row >
-                    <Col xs={12} md={8}>
-                        <h1 className="projectsHeader">Projects</h1>
-                    </Col>
-                </Row>
-                <Row >
-                    <Col  xs={12} md={8}>
-                        <img  class="projectOne" src={projects.project1.image} alt= "vowvowow view"></img>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col className= "projectTwo" xs={6} md={4}>
-                        <h2 >{projects.project2.title}</h2>
-                        <img sizes="(max-width: 600px) 480px,
-                        800px" src={projects.project2.image} alt= "movieRating"></img>
-                    </Col>
-                    <Col  class="projectThreeContainer" xs={6} md={4}>
-                        <h2 class="projectThreeh2">{projects.project3.title}</h2>
-                        <img  sizes="(max-width: 600px) 480px,
-                        800px" class="projectThree"src={projects.project3.image} alt= "portfolio"></img>
-                    </Col>
-                </Row>
-                </Container>
+        
+    <div className='projectsPage'>
+        <Row >
+            <Col>
+                <h1 className="projectsHeader">Projects</h1>
+            </Col>
+        </Row>
+        <ImageList
+            sx={{
+            width: 3/5,
+            mx: 30,
+            
+            // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
+            transform: 'translateZ(0)',
+            }}
+            
+            // rowHeight='auto'
+            gap={0}
+         >
+            {projects.map((item) => {
+                const cols = item.featured ? 2 : 1;
+                const rows = item.featured ? 2 : 1;
+                return (
+                    <ImageListItem  className={item.class} key={item.image} cols={cols} rows={rows}>
+                        <img 
+                            {...srcset(item.image, 250, 100, rows, cols)}
+                            alt={item.title}
+                            loading="lazy"
+                        />
+                        <ImageListItemBar
+                            sx={{
+                                bgcolor: '',
+                                background:'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
+                                'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
+                                color: 'black'
+                            }}
+                            title={item.title}
+                            subtitle={item.description}
+                            position='top'
+                            
+                            actionIcon={
+                                <IconButton
+                                    sx={{ color: 'rgba(0,0,0,0)' }}
+                                    aria-label={`github link ${item.link}`}  
+                                >
+                                                                
+                                <a href={item.link} className="githubLink" target="_blank" rel="noopener noreferrer"><GitHubIcon fontSize="large" /></a>
+
+                                    
+                                </IconButton>
+                            }
+                        />
+                    </ImageListItem>
+                );
+            })} 
+        </ImageList>
+    </div>
   );
 }
-                
+            
+
    
 
 export default Projects;

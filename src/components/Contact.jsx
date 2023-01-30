@@ -17,7 +17,6 @@ function Contact () {
     const [success, setSuccessMessage] = useState(false);
     const [failure, setFailureMessage] = useState(false);
 
-    // const [alert, setAlert] = useState({variant: 'light'})
     const [state, setState] = useState({
         firstName: '', 
         lastName: '', 

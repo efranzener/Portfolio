@@ -1,29 +1,45 @@
-.homePage {
+
+.App{
+  background-color: white;
   font-family: 'Inter', sans-serif;
-  text-align: center;
   color: rgb(0, 0, 86);
-  overflow:hidden;
-  background-color: #EA9A27;
-  color: white;
-  z-index:1;
 }
-  
+
+
 h1 {
   font-size:xx-large;
 }
 
+/* ###### HOMEPAGE ###### */
+.homepage {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  overflow:hidden;
+  background-color: #EA9A27;
+  z-index:1;
+}
+
+.homepageContent > h1 {
+  font-size: 5em;
+  color: white;
+}
+.homepageContent > h2 {
+  font-size: 3em;
+  color: white;
+}
 
 .homepagePic {
   margin-bottom: -3%;
   width: 100%;
-  
 }
+
+
+/* ###### NAVBAR ######*/
 
 .navBar {
   font-size: large;
   font-weight: bold;
   color: white !important;
-
 }
 
 .navBar .myLogo {
@@ -32,26 +48,8 @@ h1 {
   color: whitesmoke
 }
 
-.sectionHeader {
-  vertical-align: bottom;
-  font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
-  font-size: 1000%;
-  font-weight: 800%;
-  letter-spacing: -0.02em;
-  text-align: start;
-  position: relative;
-  pointer-events: none;
-  padding-top: 3%;
-  margin-left: 26%;
-  z-index:1;
-  /* color: darkblue; */
-  
-  
-  
 
-}
-
-
+/* ###### SHARED LAYOUT ###### */
 
 .myStickyBox {
   position: fixed;
@@ -67,17 +65,14 @@ h1 {
 .myStickyBox a {
 display: block;
 width: 40%;
-/* padding-right: 1%; */
 padding-top: 5%;
 padding-bottom: 5%;
 text-align: center;
-
 }
 
 .linkedin{
 color: #007bb5;
 background: white;
-
 }
 
 .github {
@@ -91,94 +86,48 @@ background: white;
 }
 
 .footer {
-  
   background-color: white
- 
 }
 
 
+/* ###### PROJECTS PAGE ###### */
+
+.projectsPage {
+  background-color: whitesmoke;
+
+}
 
 .projectsHeader {
-  background-color: white;
-  font-size: 20vh;
+  background-color: whitesmoke;
+  font-size: 5em;
   font-weight: 80vh;
   letter-spacing: -0.02em;
-  z-index: 3;
   text-align: start;
+  color: #007bb5;
+  padding-top: 5%;
+  margin-left: 14%;
+  padding-left: 5%;
 }
-
-
 
 .projectOne {
-  background-color:#EA9A27;
-  text-align: start;
-  max-width: 100%;
-  min-width: 100%;
-  
-}
-
-.projectOne > img {
-  max-width: 100%;
-  min-width: 100%;
+  background-color: orange;
+  padding: 5%;
+  padding-bottom: 0;
 }
 
 .projectTwo {
-  text-align: start;
-  color: black;
-  
-  background-color:teal;
-  display: grid;
-  grid-template-columns: 1fr;
-
-}
-
-.projectTwo > img {
-  max-width: 100%;
-  margin-top: 0%;
-}
-
-
-.projectThree {
-  text-align: start;
-  color: black;
-  font-size: 8vh;
-  background-color: orange;
-  /* max-height: 50%;
-  min-width: 90%;
-  max-width: 99%; */
-  
-}
-
-.projectThreeContainer{
-  display: grid;
-  grid-template-columns: 1fr;
-  background-color: orange;
- 
-}
-
-.projectThreeh2{
   width: 100%;
-  background-color: orange;
-  
-  
+  height: 100%;
+  background-color:#15b8b8;
+  padding-top: 15%;
 }
 
-/* .movieRating {
-  background-color: teal;
-  margin-left: 5%;
-  padding: 10%;
-  
-} */
-
-.portfolioHeader {
-  
-  z-index: 2;
+.githubLink {
+  color: white;
 }
 
-.projectsSection {
-  background-color: white;
-  
-}
+
+/* ####### CONTACT PAGE ####### */
 
 .contactForm {
   display: flex;
@@ -192,7 +141,6 @@ background: white;
   background-color: whitesmoke;
   text-align: center;
   border-radius: 5px;
-
 }
 
 .formContainer > h2 {
@@ -241,7 +189,6 @@ background: white;
   border: solid 1px;
   border-color: lightgray;
   border-radius: 5px;
-
 }
 
 .formContainer > input {
@@ -261,8 +208,20 @@ background: white;
   font-size: 1.2em;
 }
 
-.projectPage {
-  background-color: black;
-  opacity: 0.9;
-  padding: 2%;
+
+.resumeContainer{
+  display:  flex;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  margin-top: 5vh;
+  padding: 2vh 2vw 2vh 2vw;
+  background-color: rgb(170, 186, 158);
+  background-size: contain;
+}
+
+.resumeContainer > object{
+  display: flex;
+  width: 800px;
+  height: 800px;
 }

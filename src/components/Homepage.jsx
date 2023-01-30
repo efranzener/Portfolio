@@ -1,27 +1,40 @@
 
 import React from 'react';
-import HomePic from './Homepic.jsx';
+// import HomePic from './HomepagePic.jsx';
 
 import { Grid, Segment} from 'semantic-ui-react'
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
+import homepagePic from '../assets/homepagePic.jpg';
 
 
+function HomePic () {
+    
+  return (
+      <Image 
+          
+          alt = 'profilePic'
+          className = 'homepagePic'
+          fluid='true'
+          src={homepagePic}
+      ></Image>
+  
+  );
+  
+}
 
 
 function Homepage () {
   const contentHomepage = (
-    <section>
+    <section className="homepageContent">
       <h1>Hi! I'm Etyene</h1>
-      <h2>I'm a Software Developer</h2>
+      {/* <h2>a full stack web developer, specialized in Python and Java Script and React</h2> */}
       
     </section>
       
   )
   return (
     <Segment>
-      <Grid  className="homePage" columns="equal" divided="vertically" verticalAlign='middle' textAlign='center' >
+      <Grid  className="homepage" columns="equal" divided="vertically" verticalAlign='middle' textAlign='center' >
         <Grid.Row stretched >
           <Grid.Column>
             {contentHomepage}
@@ -39,4 +52,4 @@ function Homepage () {
 }
  
 
-export default Homepage;
+export  default Homepage;

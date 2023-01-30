@@ -7,7 +7,7 @@ function Error () {
     return (
         <>
             <h1>404</h1>
-            <p> Page not found</p>
+            <h2> Page not found</h2>
             <Link to='/'>
                 <p> back home</p>
             </Link>

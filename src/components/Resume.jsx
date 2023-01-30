@@ -1,12 +1,14 @@
 import React from 'react';
-// import ResumeEtyene from '/public/ResumeEtyene.pdf';
+import ResumeEtyene from '../assets/ResumeEtyene.pdf';
 
 function Resume() {
 
     return (
-        ""
-    //     <object data={ResumeEtyene} type="application/pdf">
-    //     </object>
+    <div className="resumeContainer">
+        <object data={ResumeEtyene} 
+        type="application/pdf">
+        </object>
+    </div>
     );
 }
 
