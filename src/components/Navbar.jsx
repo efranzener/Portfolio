@@ -10,7 +10,7 @@ function NavigationBar() {
   return (
       <Navbar className="navBar  bg-dark"  >
         <Container>
-          <Navbar.Brand as= {Link} className="myLogo" to="/">EFHelle</Navbar.Brand>
+          <Navbar.Brand as= {Link} className="myLogo" to="/">EF <div><br></br></div>Helle</Navbar.Brand>
           <Nav className="text-center mt-4 mb-4 "  >
               <Nav.Link  as={Link} className= "navItem text-white-50" to="/About">About</Nav.Link>
               <Nav.Link  as={Link} className= "navItem text-white-50" to="/Projects">Projects</Nav.Link>

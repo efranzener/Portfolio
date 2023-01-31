@@ -45,7 +45,7 @@ function Projects () {
             }}
             
             // rowHeight='auto'
-            gap={0}
+            gap={20}
          >
             {projects.map((item) => {
                 const cols = item.featured ? 2 : 1;
@@ -59,10 +59,11 @@ function Projects () {
                         />
                         <ImageListItemBar
                             sx={{
-                                bgcolor: '',
+                                
                                 background:'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
                                 'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
-                                color: 'black'
+                                
+                                
                             }}
                             title={item.title}
                             subtitle={item.description}

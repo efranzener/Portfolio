@@ -1,18 +1,19 @@
 
 .App{
   background-color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif, 'Playfair Display', serif, 'Grandslang roman';
   color: rgb(0, 0, 86);
 }
 
 
 h1 {
   font-size:xx-large;
+  
 }
 
 /* ###### HOMEPAGE ###### */
 .homepage {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Playfair Display', serif;;
   text-align: center;
   overflow:hidden;
   background-color: #EA9A27;
@@ -40,12 +41,19 @@ h1 {
   font-size: large;
   font-weight: bold;
   color: white !important;
+  
 }
 
 .navBar .myLogo {
-  font-size: xx-large;
+  font-size: 8vh;
+  font-size: 5vw;
   font-weight:bold; 
-  color: whitesmoke
+  color: palevioletred;
+  padding-bottom: 1px;
+  /* padding-top: 20px; */
+  margin-top: 2%;
+  font-family: 'Playfair Display','sans-serif';
+  
 }
 
 
@@ -94,34 +102,49 @@ background: white;
 
 .projectsPage {
   background-color: whitesmoke;
-
+  
 }
 
 .projectsHeader {
-  background-color: whitesmoke;
+   
+  background-color: #faeee7;
   font-size: 5em;
-  font-weight: 80vh;
-  letter-spacing: -0.02em;
+  font-family:'Playfair Display';
+  /* letter-spacing: -0.03em; */
   text-align: start;
-  color: #007bb5;
+  color: #33272a;
   padding-top: 5%;
   margin-left: 14%;
   padding-left: 5%;
 }
 
 .projectOne {
-  background-color: orange;
+  background-color: white;
   padding: 5%;
   padding-bottom: 0;
+  border: solid 15px;
+  border-color: olivedrab;
 }
 
+.projectTwo:hover {
+  
+  background-color: white;
+  display: none;
+  
+}
 .projectTwo {
   width: 100%;
   height: 100%;
-  background-color:#15b8b8;
+  /* background-color:thistle; */
   padding-top: 15%;
+  border: solid 15px;
+  border-color: white;
+  background-color: black;
 }
-
+.projectThree {
+  border: solid 15px;
+  border-color: purple;
+}
 .githubLink {
   color: white;
 }
@@ -208,7 +231,6 @@ background: white;
   font-size: 1.2em;
 }
 
-
 .resumeContainer{
   display:  flex;
   width: 100%;
@@ -224,4 +246,47 @@ background: white;
   display: flex;
   width: 800px;
   height: 800px;
+}
+
+/* ###### ABOUT ###### */
+
+
+.aboutContainer {
+
+  line-height: 1.9em;
+}
+
+.aboutContainer > h2{ 
+ font-family:'Playfair Display';
+ font-size: 11em;
+ font-weight: 300;
+ text-align: left;
+ margin-left: 10%;
+}
+
+.aboutContent { 
+  font-size: 1.5em;
+  position:relative;
+  max-width: 80%;
+  line-height: 1.7em;
+  margin-left: 10vw;
+  display: block;
+  font-family: Montserrat, sans-serif;
+;}
+
+.aboutIntro {
+  display: block;
+  font-size: 3vw;
+  font-family:'Playfair Display';
+  font-weight:300;
+  line-height: 1.3em;
+}
+
+.myPic{
+  width: 35%;
+  position: relative;
+  display: block;
+  float: right;
+  margin-top: 5%;
+  margin-right: 5%;
 }

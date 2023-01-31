@@ -6,7 +6,7 @@
 // import movieRatingApp from '../../assets/movieRatingApp.png';
 
 import vowvow from './assets/vowvow.jpg';
-import movieRatingApp from './assets/movieRating.png';
+import movieRatingApp from './assets/movieRatingTest.png';
 import homepagePic from './assets/homepagePic.jpg';
 
 const projects = [
@@ -17,7 +17,8 @@ const projects = [
         image: vowvow,
         link: 'https://github.com/efranzener/Dog-walker-App',
         featured: true,
-        class: 'projectOne'
+        class: 'projectOne',
+        
 
     },
     {
