@@ -1,10 +1,9 @@
 
 .App{
   background-color: white;
-  font-family: 'Inter', sans-serif, 'Playfair Display', serif, 'Grandslang roman';
+  font-family: 'Inter', 'sans-serif', 'Playfair Display', serif, 'Grandslang roman';
   color: rgb(0, 0, 86);
 }
-
 
 h1 {
   font-size:xx-large;
@@ -13,22 +12,32 @@ h1 {
 
 /* ###### HOMEPAGE ###### */
 .homepage {
-  font-family: 'Playfair Display', serif;;
+  font-family: 'Playfair Display', ;
   text-align: center;
   overflow:hidden;
   background-color: #EA9A27;
-  z-index:1;
 }
 
 .homepageContent > h1 {
-  font-size: 5em;
-  color: white;
+  font-size: 7em;
+  color: Black;
+  font-family: 'Playfair Display';
+  font-weight: lighter;
+
 }
 .homepageContent > h2 {
-  font-size: 3em;
+  font-size: 2em;
   color: white;
+  font-weight: light;
+  font-family: 'Playfair Display';
 }
 
+.homepageContent > h3 {
+  font-size: 1.5em;
+  color: white;
+  font-weight: lighter;
+  font-family: 'Playfair Display';
+}
 .homepagePic {
   margin-bottom: -3%;
   width: 100%;
@@ -47,15 +56,21 @@ h1 {
 .navBar .myLogo {
   font-size: 8vh;
   font-size: 5vw;
-  font-weight:bold; 
-  color: palevioletred;
+  font-weight: lighter;
+  color: pink;
   padding-bottom: 1px;
+  padding: 5px;
+  line-height: -1px;
+  border: solid 2px white;
   /* padding-top: 20px; */
   margin-top: 2%;
   font-family: 'Playfair Display','sans-serif';
   
 }
 
+.helle {
+  color: palevioletred;
+}
 
 /* ###### SHARED LAYOUT ###### */
 
@@ -101,50 +116,40 @@ background: white;
 /* ###### PROJECTS PAGE ###### */
 
 .projectsPage {
-  background-color: whitesmoke;
-  
+  background-color: #EA9A27;
+  margin-top: 2%;
 }
 
 .projectsHeader {
-   
-  background-color: #faeee7;
-  font-size: 5em;
   font-family:'Playfair Display';
-  /* letter-spacing: -0.03em; */
-  text-align: start;
-  color: #33272a;
-  padding-top: 5%;
-  margin-left: 14%;
-  padding-left: 5%;
+  font-size: 11em;
+  font-weight: lighter;
+  text-align: center;
+ 
+  background: #EA9A27;
+  color: white;
 }
 
 .projectOne {
-  background-color: white;
-  padding: 5%;
+
   padding-bottom: 0;
   border: solid 15px;
-  border-color: olivedrab;
+  border-color: white;
 }
 
-.projectTwo:hover {
-  
-  background-color: white;
-  display: none;
-  
-}
 .projectTwo {
   width: 100%;
-  height: 100%;
-  /* background-color:thistle; */
-  padding-top: 15%;
+  height: 80%;
   border: solid 15px;
-  border-color: white;
-  background-color: black;
+  border-color: black;
+  background-color: white;
 }
+
 .projectThree {
   border: solid 15px;
-  border-color: purple;
+  border-color: lavenderblush;
 }
+
 .githubLink {
   color: white;
 }
@@ -252,11 +257,10 @@ background: white;
 
 
 .aboutContainer {
-
   line-height: 1.9em;
 }
 
-.aboutContainer > h2{ 
+.aboutContainer > h2 { 
  font-family:'Playfair Display';
  font-size: 11em;
  font-weight: 300;
@@ -267,19 +271,23 @@ background: white;
 .aboutContent { 
   font-size: 1.5em;
   position:relative;
-  max-width: 80%;
+  max-width: 100%;
   line-height: 1.7em;
+  margin-right: 10vw;
   margin-left: 10vw;
   display: block;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Playfair Display';
+  align-content: justify;
+
 ;}
 
 .aboutIntro {
   display: block;
   font-size: 3vw;
-  font-family:'Playfair Display';
+  font-family: 'Playfair Display';
   font-weight:300;
   line-height: 1.3em;
+  align-content: justify;
 }
 
 .myPic{
@@ -287,6 +295,7 @@ background: white;
   position: relative;
   display: block;
   float: right;
-  margin-top: 5%;
-  margin-right: 5%;
+  margin: 5%;
+  padding: 0;
+  border: 5px solid;
 }

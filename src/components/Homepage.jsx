@@ -26,9 +26,10 @@ function HomePic () {
 function Homepage () {
   const contentHomepage = (
     <section className="homepageContent">
-      <h1>Hi! I'm Etyene</h1>
-      {/* <h2>a full stack web developer, specialized in Python and Java Script and React</h2> */}
-      
+      <h1>Hi! </h1>
+      <h2>I'm Etyene, a full-stack Software Engineer</h2>
+      <h3> based in Seattle - WA</h3>
+
     </section>
       
   )

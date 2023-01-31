@@ -5,7 +5,7 @@
 // import vowvow from '../src/assets/vowvow.png';
 // import movieRatingApp from '../../assets/movieRatingApp.png';
 
-import vowvow from './assets/vowvow.jpg';
+import vowvow from './assets/vowvoW.png';
 import movieRatingApp from './assets/movieRatingTest.png';
 import homepagePic from './assets/homepagePic.jpg';
 
@@ -27,7 +27,8 @@ const projects = [
         description: 'A web application that allow users to find and rate movies',
         image:movieRatingApp,
         link:"https://github.com/efranzener/Movie-Rating-App",
-        class:'projectTwo'
+        class:'projectTwo',
+        featured: true,
         
     },
     {
@@ -36,7 +37,9 @@ const projects = [
         description: 'A front-end web aplication that allow users to learn more about my work and to directly connect with me',
         image:homepagePic,
         link:'https://github.com/efranzener/Portfolio',
-        class:'projectThree'
+        class:'projectThree',
+        featured: true,
+
     }
 ]
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import myPic from '../assets/myPic.jpg'
 
+
 function AboutPage () {
 
   return (
@@ -8,7 +9,7 @@ function AboutPage () {
       <img src={myPic} alt="EtyeneProfilePic" class='myPic'></img>
         <h2>About</h2>
         <div >
-          <p className="aboutContent">
+          <p className="aboutContent" col={1}>
             <span className="aboutIntro">I’m Etyene, a full-stack Software Developer.</span>
             <br/>
             With a previous curiosity in technology, my interest in learning how to code grew after taking a 5-weeks Python fundamentals class, recommended by a friend. 
@@ -21,7 +22,7 @@ function AboutPage () {
             <br/>
             <br/>
             What excites me the most about working as a software developer is the ability it gives me to design and build technology that solves real problems and make people’s lives easier, in a small and big scale.  
-            I’m currently looking for opportunities as a back-end, front-end or full-stack develper where I can to contribute my skills and keep learning and developing with new technologies." 
+            I’m currently looking for opportunities as a back-end, front-end or full-stack develper where I can to contribute my skills and keep learning and developing with new technologies. 
           </p>
         </div>
     </div>

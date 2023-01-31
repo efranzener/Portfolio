@@ -39,12 +39,14 @@ function Projects () {
             sx={{
             width: 3/5,
             mx: 30,
+            // maxHeight: 1/2,
+            
             
             // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
             transform: 'translateZ(0)',
             }}
             
-            // rowHeight='auto'
+            rowHeight='auto'
             gap={20}
          >
             {projects.map((item) => {
@@ -53,20 +55,20 @@ function Projects () {
                 return (
                     <ImageListItem  className={item.class} key={item.image} cols={cols} rows={rows}>
                         <img 
-                            {...srcset(item.image, 250, 100, rows, cols)}
+                            {...srcset(item.image, 250, 200, rows, cols)}
                             alt={item.title}
                             loading="lazy"
                         />
                         <ImageListItemBar
                             sx={{
                                 
-                                background:'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
-                                'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
+                                background:'black',
+                                
                                 
                                 
                             }}
                             title={item.title}
-                            subtitle={item.description}
+                            // subtitle={item.description}
                             position='top'
                             
                             actionIcon={
