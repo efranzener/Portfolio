@@ -5,6 +5,9 @@ function Resume() {
 
     return (
     <div className="resumeContainer">
+        <div>
+            <h2>Resume</h2>
+        </div>
         <object data={ResumeEtyene} 
         type="application/pdf">
         </object>

@@ -93,10 +93,18 @@ function Contact () {
             }
 
         return (
-        <div className = "projectPage">
-            <div className="contactForm">  
-                <form className="formContainer"  ref={form} onSubmit={sendEmail} >
-                    <h2> CONTACT </h2>
+        <div className = "contactPage">
+            <div className='contactFormHeader'>
+                <h2> Contact </h2> 
+            </div>
+            <div>
+                <p>
+                    
+                </p>
+            </div>
+            <div className="contactForm"> 
+                <form className="formContainer"  ref={form} onClick={sendEmail} >
+                    
                     <div>
                         <label>First Name</label>
                         <input type='text' name='firstName' value={state.firstName} onChange={handleChange} required/>
@@ -111,7 +119,7 @@ function Contact () {
                         <label>Message</label>
                         <textarea  type='textarea' name='message' value={state.message} onChange={handleChange} required/>
                     </div>
-                    <input type="submit" value="Send" />
+                    <button type="submit" value="Send">Send</button>
                 </form>
             </div>
             <div className='alertMessage'>

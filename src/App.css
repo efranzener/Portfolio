@@ -2,7 +2,7 @@
 .App{
   background-color: white;
   font-family: 'Inter', 'sans-serif', 'Playfair Display', serif, 'Grandslang roman';
-  color: rgb(0, 0, 86);
+  color: rgba(51,51,51,1);
 }
 
 h1 {
@@ -15,44 +15,49 @@ h1 {
   font-family: 'Playfair Display', ;
   text-align: center;
   overflow:hidden;
-  background-color: #EA9A27;
+  background-color: #eee7e1;
+  /* background-color: #EA9A27; */
 }
-
+/* #EA9A27 */
 .homepageContent > h1 {
   font-size: 7em;
-  color: Black;
+  color: rgba(51,51,51,1);
   font-family: 'Playfair Display';
   font-weight: lighter;
 
 }
 .homepageContent > h2 {
   font-size: 2em;
-  color: white;
+  color: rgba(51,51,51,1);
   font-weight: light;
   font-family: 'Playfair Display';
 }
 
 .homepageContent > h3 {
   font-size: 1.5em;
-  color: white;
+  color: rgba(51,51,51,1);
   font-weight: lighter;
   font-family: 'Playfair Display';
 }
 .homepagePic {
   margin-bottom: -3%;
   width: 100%;
+  border: 3px solid rgba(51,51,51,1);
+  border-radius: 5px;
 }
 
 
 /* ###### NAVBAR ######*/
 
 .navBar {
-  font-size: large;
+  font-size: 1.3vw;
   font-weight: bold;
-  color: white !important;
+  background-color: rgba(51,51,51,1) !important;
   
 }
-
+.navItem {
+  color: #eee7e1 !important;
+}
 .navBar .myLogo {
   font-size: 8vh;
   font-size: 5vw;
@@ -108,33 +113,31 @@ background: white;
   background:white;
 }
 
-.footer {
-  background-color: white
-}
 
 
 /* ###### PROJECTS PAGE ###### */
 
 .projectsPage {
-  background-color: #EA9A27;
+  background-color: #eee7e1;
   margin-top: 2%;
+  text-align: center;
+
 }
 
 .projectsHeader {
   font-family:'Playfair Display';
-  font-size: 11em;
-  font-weight: lighter;
-  text-align: center;
- 
-  background: #EA9A27;
-  color: white;
+  font-size: 9em;
+  font-weight: 300;
+  /* text-align: center; */
+  background:  #eee7e1;
+  color: rgba(51,51,51,1);
 }
 
 .projectOne {
 
   padding-bottom: 0;
   border: solid 15px;
-  border-color: white;
+  border-color: black;
 }
 
 .projectTwo {
@@ -161,40 +164,67 @@ background: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 10vh;
+  /* padding-top: 10vh; */
+}
+
+.contactPage{
+  background-color: #eee7e1;
+  margin-top: 2vh;
 }
 
 .formContainer {
-  display: table;
-  background-color: whitesmoke;
+  display: block;
   text-align: center;
+  align-items: center;
   border-radius: 5px;
+  padding-top: 2vh;
+  position: relative;
+  padding-bottom: 2vh;
 }
 
-.formContainer > h2 {
+.formContainer:before{
+  content:'';
+  background-color: rgba(51,51,51,1);
+  background-size: cover;
+  position: absolute;
+  top:0px;
+  right:0px;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 5px;
+  border: solid 2px;
+  border-color: pink;
+}
+
+
+.contactFormHeader > h2 {
+  font-family:'Grandslang roman', sans-serif;
+  font-size: 10em;
+  font-weight: 7vw;
+  display: block;
+  font-weight: lighter;
+  text-align: center;
   justify-content: center;
-  color: orangered;
-  font-size: 2em;
-  padding-top: 1vh;
-  font-weight:bolder ;
+  color:rgba(51,51,51,1)
+
   
 }
+
+
 .formContainer > div{
   display:table-row;
 }
 
-.formContainer > div > label,
-.formContainer > div > textarea {
-  margin: 0 1vw 0 1vw;
-  padding: 0 1vw 0 1vw;
-  display: flex;
-  color: darkcyan;
-  font-size: 1.2em;
-  width: 35vw;
-}
 
 .formContainer > div > label {
-  font-weight: bold;
+  margin: 0 1vw 0 1vw;
+  padding: 1vh 1vw 1vh 1vw;
+  display: flex;
+  /* font-weight: bold; */
+  color: white;
+  font-size: 1.2em;
+  position: relative;
+  font-family: 'Montserrat', 'sans-serif';
 }
 
 .formContainer > div > input{
@@ -202,9 +232,12 @@ background: white;
   font-size: 1.2em;
   width: 35vw;
   margin: 0 2vw 2vh 2vw;
-  padding: 1vh 1vw 1vw 1vh;
-  border: solid 1px;
-  border-color: lightgray;
+  margin-bottom: 2vh;
+  padding: 1vh 1vw 1vh 1vw;
+  border: solid 2px;
+  background-color: white;
+  border-color: pink;
+  position: relative;
   border-radius: 5px;
 }
 
@@ -217,15 +250,17 @@ background: white;
   border: solid 1px;
   border-color: lightgray;
   border-radius: 5px;
+  font-family: 'Playfair Display';
+  position: relative;
 }
 
-.formContainer > input {
-  width: 5vw;
-  height: 4vh;
-  color:  rgb(0, 18, 83);
-  margin-bottom: 1vh;
-  border-radius: 5px;
-  background-color: white;
+.formContainer > button {
+  position: relative;
+  background-color:pink;
+  border: none;
+  border-radius: 20%;
+  padding: 1%;
+  color:palevioletred
 }
 
 .alertMessage{
@@ -236,21 +271,30 @@ background: white;
   font-size: 1.2em;
 }
 
+
 .resumeContainer{
-  display:  flex;
+  display:  block;
   width: 100%;
   height: 50%;
   justify-content: center;
-  margin-top: 5vh;
+  margin-top: 2vh;
   padding: 2vh 2vw 2vh 2vw;
-  background-color: rgb(170, 186, 158);
-  background-size: contain;
+  background-color: #eee7e1;
+  background-size: cover;
+  text-align: center;
 }
 
-.resumeContainer > object{
-  display: flex;
+.resumeContainer > div > h2 {
+  font-family:'Playfair Display';
+  font-size: 10em;
+  font-weight: 300;
+  color: rgba(51,51,51,1)
+}
+
+.resumeContainer > object{  
   width: 800px;
-  height: 800px;
+  height: 100vh;
+  
 }
 
 /* ###### ABOUT ###### */
@@ -258,14 +302,16 @@ background: white;
 
 .aboutContainer {
   line-height: 1.9em;
+  background-color: #eee7e1;
 }
 
 .aboutContainer > h2 { 
  font-family:'Playfair Display';
  font-size: 11em;
  font-weight: 300;
- text-align: left;
+ text-align: center;
  margin-left: 10%;
+ color: rgba(51,51,51,1)
 }
 
 .aboutContent { 
@@ -283,7 +329,7 @@ background: white;
 
 .aboutIntro {
   display: block;
-  font-size: 3vw;
+  font-size: 1.7em;
   font-family: 'Playfair Display';
   font-weight:300;
   line-height: 1.3em;
@@ -291,11 +337,12 @@ background: white;
 }
 
 .myPic{
-  width: 35%;
+  width: 30%;
   position: relative;
   display: block;
   float: right;
   margin: 5%;
-  padding: 0;
-  border: 5px solid;
+  
+  border: 5px solid rgba(51,51,51,1);
+  border-radius: 5px;
 }
