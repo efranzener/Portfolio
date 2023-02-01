@@ -10,38 +10,42 @@ h1 {
   
 }
 
+
 /* ###### HOMEPAGE ###### */
+
 .homepage {
   font-family: 'Playfair Display', ;
   text-align: center;
-  overflow:hidden;
   background-color: #eee7e1;
-  /* background-color: #EA9A27; */
+  height: 100vh;
+
 }
-/* #EA9A27 */
+
 .homepageContent > h1 {
-  font-size: 7em;
+  font-size: 8vw;
   color: rgba(51,51,51,1);
   font-family: 'Playfair Display';
   font-weight: lighter;
-
 }
+
 .homepageContent > h2 {
-  font-size: 2em;
+  font-size: 2vw;
   color: rgba(51,51,51,1);
   font-weight: light;
   font-family: 'Playfair Display';
 }
 
 .homepageContent > h3 {
-  font-size: 1.5em;
+  font-size: 1.5vw;
   color: rgba(51,51,51,1);
   font-weight: lighter;
   font-family: 'Playfair Display';
 }
+
 .homepagePic {
+  height: 60vh;
   margin-bottom: -3%;
-  width: 100%;
+  width: 100vw;
   border: 3px solid rgba(51,51,51,1);
   border-radius: 5px;
 }
@@ -55,22 +59,19 @@ h1 {
   background-color: rgba(51,51,51,1) !important;
   
 }
+
 .navItem {
   color: #eee7e1 !important;
 }
+
 .navBar .myLogo {
-  font-size: 8vh;
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: lighter;
   color: pink;
-  padding-bottom: 1px;
-  padding: 5px;
   line-height: -1px;
   border: solid 2px white;
-  /* padding-top: 20px; */
   margin-top: 2%;
-  font-family: 'Playfair Display','sans-serif';
-  
+  font-family: 'Playfair Display';
 }
 
 .helle {
@@ -117,7 +118,7 @@ background: white;
 
 /* ###### PROJECTS PAGE ###### */
 
-.projectsPage {
+/* .projectsPage {
   background-color: #eee7e1;
   margin-top: 2%;
   text-align: center;
@@ -126,9 +127,8 @@ background: white;
 
 .projectsHeader {
   font-family:'Playfair Display';
-  font-size: 9em;
+  font-size: 10vw;
   font-weight: 300;
-  /* text-align: center; */
   background:  #eee7e1;
   color: rgba(51,51,51,1);
 }
@@ -156,20 +156,21 @@ background: white;
 .githubLink {
   color: white;
 }
-
+ */
 
 /* ####### CONTACT PAGE ####### */
+
+.contactPage{
+  background-color: #eee7e1;
+  margin-top: 2vh;
+  width: 100vw;
+  height: 100vh;
+}
 
 .contactForm {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding-top: 10vh; */
-}
-
-.contactPage{
-  background-color: #eee7e1;
-  margin-top: 2vh;
 }
 
 .formContainer {
@@ -198,23 +199,16 @@ background: white;
 
 
 .contactFormHeader > h2 {
-  font-family:'Grandslang roman', sans-serif;
-  font-size: 10em;
+  font-family:'Playfair Display';
+  font-size: 10vw;
   font-weight: 7vw;
   display: block;
   font-weight: lighter;
   text-align: center;
   justify-content: center;
   color:rgba(51,51,51,1)
-
-  
 }
-
-
-.formContainer > div{
-  display:table-row;
-}
-
+/*  */
 
 .formContainer > div > label {
   margin: 0 1vw 0 1vw;
@@ -224,10 +218,11 @@ background: white;
   color: white;
   font-size: 1.2em;
   position: relative;
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: 'Play';
 }
 
 .formContainer > div > input{
+  font-family: 'Playfair Display';
   color: black;
   font-size: 1.2em;
   width: 35vw;
@@ -247,19 +242,21 @@ background: white;
   height: 15vh;
   color: black;
   margin: 0 2vw 2vh 2vw;
-  border: solid 1px;
-  border-color: lightgray;
+  border: solid 1px pink;
+  background-color: white;
   border-radius: 5px;
   font-family: 'Playfair Display';
   position: relative;
 }
 
-.formContainer > button {
+.button {
+  font-family: 'Playfair Display';
   position: relative;
   background-color:pink;
   border: none;
-  border-radius: 20%;
-  padding: 1%;
+  width: 6vw;
+  border-radius: 10px;
+  padding: 1vh;
   color:palevioletred
 }
 
@@ -271,6 +268,8 @@ background: white;
   font-size: 1.2em;
 }
 
+
+/* ###### RESUME PAGE ###### */
 
 .resumeContainer{
   display:  block;
@@ -286,7 +285,7 @@ background: white;
 
 .resumeContainer > div > h2 {
   font-family:'Playfair Display';
-  font-size: 10em;
+  font-size: 10vw;
   font-weight: 300;
   color: rgba(51,51,51,1)
 }
@@ -297,42 +296,42 @@ background: white;
   
 }
 
+
 /* ###### ABOUT ###### */
 
-
 .aboutContainer {
-  line-height: 1.9em;
   background-color: #eee7e1;
+  height: 100%;
+  width: 100%;
+  margin-top: 2vh;
+  background-size: cover;
 }
 
 .aboutContainer > h2 { 
- font-family:'Playfair Display';
- font-size: 11em;
- font-weight: 300;
- text-align: center;
- margin-left: 10%;
- color: rgba(51,51,51,1)
+  font-family:'Playfair Display';
+  font-size: 10em;
+  font-weight: 300;
+  text-align: center;
+  color: rgba(51,51,51,1)
 }
 
 .aboutContent { 
   font-size: 1.5em;
   position:relative;
-  max-width: 100%;
   line-height: 1.7em;
+  margin-top: 10vh;
   margin-right: 10vw;
   margin-left: 10vw;
   display: block;
   font-family: 'Playfair Display';
-  align-content: justify;
-
-;}
+  text-align: justify;
+}
 
 .aboutIntro {
   display: block;
   font-size: 1.7em;
   font-family: 'Playfair Display';
-  font-weight:300;
-  line-height: 1.3em;
+  line-height: 1.5em;
   align-content: justify;
 }
 
@@ -342,7 +341,180 @@ background: white;
   display: block;
   float: right;
   margin: 5%;
-  
   border: 5px solid rgba(51,51,51,1);
   border-radius: 5px;
+}
+
+.technologies{
+  font-size: 2vw;
+  position:relative;
+  line-height: 1em;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  display: block;
+  font-family: 'Playfair Display';
+  text-align: justify;
+}
+
+/* test */
+
+
+.projectsPage{
+  background-color: #eee7e1;
+  height: 100%;
+  width: 100%;
+  margin-top: 2vh;
+  background-size: cover;
+  margin-bottom: 0;  
+}
+
+.projectsPage > div > h2 {
+  display: block;
+  font-size: 1.7em;
+  font-family: 'Playfair Display';
+  line-height: 1.5em;
+  align-content: justify;
+  margin-left: 10vw;
+}
+
+.projectsHeader{
+  font-family:'Playfair Display';
+  font-size: 10em;
+  font-weight: 300;
+  text-align: center;
+  color: rgba(51,51,51,1);
+}
+
+.projectOne {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 5vh;
+  width:90%;
+  height: 40vh;
+  border: solid 5px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+
+}
+
+.projectTwo {
+
+  display: block;
+  margin-top: 0;
+  margin-bottom: 5vh;
+  width: 90%;
+  height: 40vh;
+  border: solid 5px black;
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+.projectThree {
+  display: block;
+  margin-top: 0;
+  width: 90%;
+  height: 40vh;
+  border: solid 5px black;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 0;
+}
+
+.projectOne > img {
+  max-width: 30vw;
+  max-height: 25vh;
+  min-height: 35vh;
+  position: relative;
+  display: block;
+  float: right;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  border: 5px solid rgba(51,51,51,1);
+  border-radius: 5px;
+}
+
+.projectOne > p { 
+  font-size: 1.5em;
+  position:relative;
+  line-height: 1.7em;
+  margin-right: 10vw;
+  margin-left: 5vw;
+  display: block;
+  font-family: 'Playfair Display';
+  text-align: justify;
+}
+
+.projectTwo > img {
+  max-width: 30vw;
+  max-height: 25vh;
+  min-height: 35vh;
+  position: relative;
+  display: block;
+  float: right;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  border: 5px solid rgba(51,51,51,1);
+  border-radius: 5px;
+}
+
+.projectTwo > p {
+  font-size: 1.5em;
+  position:relative;
+  line-height: 1.7em;
+  margin-right: 10vw;
+  margin-left: 5vw;
+  display: block;
+  font-family: 'Playfair Display';
+  text-align: justify;
+}
+
+
+.projectThree > img {
+  max-width: 35w;
+  min-width: 30vw;
+  max-height: 25vh;
+  min-height: 35vh;
+  position: relative;
+  display: block;
+  float: right;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  border: 5px solid rgba(51,51,51,1);
+  border-radius: 5px;
+}
+
+.projectThree >p{
+  font-size: 1.5em;
+  position:relative;
+  line-height: 1.7em;
+  margin-right: 10vw;
+  margin-left: 5vw;
+  display: block;
+  font-family: 'Playfair Display';
+  text-align: justify;
+}
+
+.projectLink  {
+  width: 40%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.projectLink {
+  color: black;
+  padding: 2vh;
+  font-size: 2vw;
+  position:relative;
+  margin-right: 20vw;
+  margin-left: 15vw;
+  display: block;
+  font-family: 'Playfair Display';
+  text-align: center;
 }

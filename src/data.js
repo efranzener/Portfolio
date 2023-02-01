@@ -6,57 +6,37 @@
 // import movieRatingApp from '../../assets/movieRatingApp.png';
 
 import vowvow from './assets/vowvoW.png';
-import movieRatingApp from './assets/movieRatingTest.png';
+import movieRatingApp from './assets/movieRatingApp.png';
 import homepagePic from './assets/homepagePic.jpg';
 
 const projects = [
     {
         title: 'Dog Walkers Web App',
-        technologies: 'Python, Flask, Java Script, HTML, CSS, PostgreSQL',
-        description: 'A full-stack web application for dog owners to find and book dog walkers',
+        technologies: 'Python, Flask, Java Script, HTML, CSS, PostgreSQL, SQLAlchemy',
+        description: 'A full-stack web application for dog owners to find and book dog walkers.',
         image: vowvow,
         link: 'https://github.com/efranzener/Dog-walker-App',
-        featured: true,
         class: 'projectOne',
-        
-
+    
     },
     {
         title: 'Movie-Rating Web App',
-        technologies: 'Python, Flask, Jinja2, HTML,',
-        description: 'A web application that allow users to find and rate movies',
+        technologies: 'Python, Flask, Jinja2, HTML, SQLAlchemy, PostreSQL',
+        description: 'A back-end web application that allow users to search for a movie and give it a 1 to 5 stars rating.',
         image:movieRatingApp,
         link:"https://github.com/efranzener/Movie-Rating-App",
         class:'projectTwo',
-        featured: true,
-        
     },
     {
         title: 'Portfolio',
         technologies: 'React, Semantic UI, Material UI, Boostrap, Emailjs, JSX, JS, HTML, CSS', 
-        description: 'A front-end web aplication that allow users to learn more about my work and to directly connect with me',
+        description: 'A front-end web aplication created as a way for me to practice and improve my React skills. It allow users to learn more about me and my work. This is an ongoing project.',
         image:homepagePic,
         link:'https://github.com/efranzener/Portfolio',
         class:'projectThree',
-        featured: true,
-
     }
 ]
 
 
-// projects.map((object) => (
-//     Object.keys(object).forEach ( key => {
-//         // console.log(`key:${key}, value: ${object[key]}`)
-//         if (key === 'technologies') {
-//             // console.log("props:", object.technologies)
-//             (object.technologies).forEach (technology => {
-//                 console.log('the src', technology.props.src)
-                
-//                 // console.log('each value', obj)
-//         })
-            
-//         }
-//     })
-// ));
 
 export  default projects

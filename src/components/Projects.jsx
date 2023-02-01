@@ -6,22 +6,22 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // import Image from 'react-bootstrap/Image';
 
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-import IconButton from '@mui/material/IconButton';
+// import ImageList from '@mui/material/ImageList';
+// import ImageListItem from '@mui/material/ImageListItem';
+// import ImageListItemBar from '@mui/material/ImageListItemBar';
+// import IconButton from '@mui/material/IconButton';
 // import InfoIcon from '@mui/icons-material/Info';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 
-function srcset(image, width, height, rows = 1, cols = 1) {
-    return {
-      src: `${image}?w=${width * cols}&h=${height * rows}&fit=clamp&auto=format`,
-      srcSet: `${image}?w=${width * cols}&h=${height * rows
-      }&fit=clamp&auto=format&dpr=2 2x`,
-    };
-  }
+// function srcset(image, width, height, rows = 1, cols = 1) {
+//     return {
+//       src: `${image}?w=${width * cols}&h=${height * rows}&fit=clamp&auto=format`,
+//       srcSet: `${image}?w=${width * cols}&h=${height * rows
+//       }&fit=clamp&auto=format&dpr=2 2x`,
+//     };
+//   }
 
   
 function Projects () {
@@ -35,58 +35,17 @@ function Projects () {
                 <h1 className="projectsHeader">Projects</h1>
             </Col>
         </Row>
-        <ImageList
-            sx={{
-            width: 3/5,
-            mx: 30,
-            // maxHeight: 1/2,
-            
-            
-            // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
-            transform: 'translateZ(0)',
-            }}
-            
-            rowHeight='auto'
-            gap={20}
-         >
-            {projects.map((item) => {
-                const cols = item.featured ? 2 : 1;
-                const rows = item.featured ? 2 : 1;
-                return (
-                    <ImageListItem  className={item.class} key={item.image} cols={cols} rows={rows}>
-                        <img 
-                            {...srcset(item.image, 250, 200, rows, cols)}
-                            alt={item.title}
-                            loading="lazy"
-                        />
-                        <ImageListItemBar
-                            sx={{
-                                
-                                background:'black',
-                                
-                                
-                                
-                            }}
-                            title={item.title}
-                            // subtitle={item.description}
-                            position='top'
-                            
-                            actionIcon={
-                                <IconButton
-                                    sx={{ color: 'rgba(0,0,0,0)' }}
-                                    aria-label={`github link ${item.link}`}  
-                                >
-                                                                
-                                <a href={item.link} className="githubLink" target="_blank" rel="noopener noreferrer"><GitHubIcon fontSize="large" /></a>
+        {projects.map((project) => (
+            <div className={project.class} key={project.title}>
+                <img src={project.image} alt={project.title}></img>
+                <h2>{project.title}</h2>
+                <p>{project.description}</p>
+                <p>For this project I used the following technologies:
+                <span> {project.technologies} </span></p>
+                <a href={project.link} className="projectLink" target="_blank" rel="noopener noreferrer"><GitHubIcon fontSize="large"/></a>
 
-                                    
-                                </IconButton>
-                            }
-                        />
-                    </ImageListItem>
-                );
-            })} 
-        </ImageList>
+            </div>
+        ))}
     </div>
   );
 }

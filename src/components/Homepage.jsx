@@ -7,6 +7,7 @@ import Image from 'react-bootstrap/Image';
 import homepagePic from '../assets/homepagePic.jpg';
 
 
+
 function HomePic () {
     
   return (
@@ -35,15 +36,23 @@ function Homepage () {
   )
   return (
     <Segment>
+    
       <Grid  className="homepage" columns="equal" divided="vertically" verticalAlign='middle' textAlign='center' >
         <Grid.Row stretched >
           <Grid.Column>
             {contentHomepage}
+            
+            <br></br>
+            <br></br>
+            <br></br>
+            
+
           </Grid.Column>
           <Grid.Column>
             <HomePic/>
           </Grid.Column>
-          <footer classname="footer"></footer>
+          
+          
 
         </Grid.Row>
 

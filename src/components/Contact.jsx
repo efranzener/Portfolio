@@ -99,11 +99,11 @@ function Contact () {
             </div>
             <div>
                 <p>
-                    
+
                 </p>
             </div>
             <div className="contactForm"> 
-                <form className="formContainer"  ref={form} onClick={sendEmail} >
+                <form className="formContainer"  ref={form} onSubmit={sendEmail} >
                     
                     <div>
                         <label>First Name</label>
@@ -119,7 +119,7 @@ function Contact () {
                         <label>Message</label>
                         <textarea  type='textarea' name='message' value={state.message} onChange={handleChange} required/>
                     </div>
-                    <button type="submit" value="Send">Send</button>
+                    <input className='button' type="submit" value="Send"></input>
                 </form>
             </div>
             <div className='alertMessage'>
