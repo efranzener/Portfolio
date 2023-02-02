@@ -64,20 +64,26 @@ h1 {
   color: #eee7e1 !important;
 }
 
+
 .navBar .myLogo {
-  font-size: 4vw;
+  font-size: 55px;
   font-weight: lighter;
-  color: pink;
+  color: pink !important;
   line-height: -1px;
   border: solid 2px white;
-  margin-top: 2%;
+  margin-top: 4vh;
   font-family: 'Playfair Display';
+  padding-bottom: 1px;
+  padding-top: 1px;
 }
 
 .helle {
   color: palevioletred;
 }
 
+.active {
+  color: palevioletred !important;
+}
 /* ###### SHARED LAYOUT ###### */
 
 .myStickyBox {
@@ -86,14 +92,14 @@ h1 {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 10%;
+  width: 10px;
   text-align: center;
   z-index:2;
 }
 
 .myStickyBox a {
 display: block;
-width: 40%;
+width: 40px;
 padding-top: 5%;
 padding-bottom: 5%;
 text-align: center;
@@ -115,56 +121,14 @@ background: white;
 }
 
 
-
-/* ###### PROJECTS PAGE ###### */
-
-/* .projectsPage {
-  background-color: #eee7e1;
-  margin-top: 2%;
-  text-align: center;
-
-}
-
-.projectsHeader {
-  font-family:'Playfair Display';
-  font-size: 10vw;
-  font-weight: 300;
-  background:  #eee7e1;
-  color: rgba(51,51,51,1);
-}
-
-.projectOne {
-
-  padding-bottom: 0;
-  border: solid 15px;
-  border-color: black;
-}
-
-.projectTwo {
-  width: 100%;
-  height: 80%;
-  border: solid 15px;
-  border-color: black;
-  background-color: white;
-}
-
-.projectThree {
-  border: solid 15px;
-  border-color: lavenderblush;
-}
-
-.githubLink {
-  color: white;
-}
- */
-
 /* ####### CONTACT PAGE ####### */
 
 .contactPage{
   background-color: #eee7e1;
   margin-top: 2vh;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 2vh;
 }
 
 .contactForm {
@@ -208,13 +172,11 @@ background: white;
   justify-content: center;
   color:rgba(51,51,51,1)
 }
-/*  */
 
 .formContainer > div > label {
   margin: 0 1vw 0 1vw;
   padding: 1vh 1vw 1vh 1vw;
   display: flex;
-  /* font-weight: bold; */
   color: white;
   font-size: 1.2em;
   position: relative;
@@ -236,13 +198,12 @@ background: white;
   border-radius: 5px;
 }
 
-
 .formContainer > div> textarea {
   width: 35vw;
   height: 15vh;
   color: black;
   margin: 0 2vw 2vh 2vw;
-  border: solid 1px pink;
+  border: solid 2px pink;
   background-color: white;
   border-radius: 5px;
   font-family: 'Playfair Display';
@@ -257,7 +218,8 @@ background: white;
   width: 6vw;
   border-radius: 10px;
   padding: 1vh;
-  color:palevioletred
+  color:palevioletred;
+  font-size: 1vw;
 }
 
 .alertMessage{
@@ -305,18 +267,19 @@ background: white;
   width: 100%;
   margin-top: 2vh;
   background-size: cover;
+  padding-bottom: 2vh;
 }
 
 .aboutContainer > h2 { 
   font-family:'Playfair Display';
-  font-size: 10em;
+  font-size: 10vw;
   font-weight: 300;
   text-align: center;
   color: rgba(51,51,51,1)
 }
 
 .aboutContent { 
-  font-size: 1.5em;
+  font-size: 1.5vw;
   position:relative;
   line-height: 1.7em;
   margin-top: 10vh;
@@ -329,7 +292,7 @@ background: white;
 
 .aboutIntro {
   display: block;
-  font-size: 1.7em;
+  font-size: 2vw;
   font-family: 'Playfair Display';
   line-height: 1.5em;
   align-content: justify;
@@ -356,8 +319,8 @@ background: white;
   text-align: justify;
 }
 
-/* test */
 
+/* ###### PROJECTS PAGE ###### */
 
 .projectsPage{
   background-color: #eee7e1;
@@ -365,80 +328,85 @@ background: white;
   width: 100%;
   margin-top: 2vh;
   background-size: cover;
-  margin-bottom: 0;  
+  padding-bottom: 1vh;
 }
 
 .projectsPage > div > h2 {
   display: block;
-  font-size: 1.7em;
+  font-size: 1.7vw;
   font-family: 'Playfair Display';
   line-height: 1.5em;
   align-content: justify;
   margin-left: 10vw;
+  margin-bottom: 0;
 }
 
 .projectsHeader{
   font-family:'Playfair Display';
-  font-size: 10em;
+  font-size: 10vw;
   font-weight: 300;
   text-align: center;
   color: rgba(51,51,51,1);
+  padding-bottom: 0.5vh;
+  
 }
 
 .projectOne {
   display: block;
+  width: 90%;
+  height: fit-content;
+  margin-left: 2em;
+  margin-right: 2em;
   margin-top: 0;
-  margin-bottom: 5vh;
-  width:90%;
-  height: 40vh;
-  border: solid 5px;
-  margin-left: 5vw;
-  margin-right: 5vw;
-
+  margin-bottom: 2em;
+  text-align: justify;
+  padding: 1em;
 }
 
 .projectTwo {
-
   display: block;
-  margin-top: 0;
-  margin-bottom: 5vh;
   width: 90%;
-  height: 40vh;
-  border: solid 5px black;
-  margin-right: 5vw;
-  margin-left: 5vw;
+  height: fit-content;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 0;
+  margin-bottom: 2em;
+  text-align: justify;
+  padding: 1em;
 }
 
 .projectThree {
   display: block;
-  margin-top: 0;
   width: 90%;
-  height: 40vh;
-  border: solid 5px black;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  margin-bottom: 0;
+  height: fit-content;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 0;
+  margin-bottom: 2em;
+  text-align: justify;
+  padding: 1em;
 }
 
 .projectOne > img {
   max-width: 30vw;
-  max-height: 25vh;
-  min-height: 35vh;
+  max-height: 100%;
   position: relative;
-  display: block;
   float: right;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  margin-right: 2vw;
-  margin-left: 2vw;
-  border: 5px solid rgba(51,51,51,1);
+  margin-top: 4px;
+  margin-bottom: 10px;
+  margin-right: 2px;
+  margin-left: 20px;
+  border: solid 2px palevioletred;
   border-radius: 5px;
+  padding: 2px
 }
 
 .projectOne > p { 
-  font-size: 1.5em;
+
+  font-size: 1.5vw;
   position:relative;
   line-height: 1.7em;
+  margin-top: 0;
   margin-right: 10vw;
   margin-left: 5vw;
   display: block;
@@ -448,30 +416,27 @@ background: white;
 
 .projectTwo > img {
   max-width: 30vw;
-  max-height: 25vh;
-  min-height: 35vh;
+  max-height: 100%;
   position: relative;
-  display: block;
   float: right;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  margin-right: 2vw;
-  margin-left: 2vw;
-  border: 5px solid rgba(51,51,51,1);
+  margin-right: 2px;
+  margin-left: 20px;
+  border: solid 2px palevioletred;
   border-radius: 5px;
+  padding: 2px;
 }
 
 .projectTwo > p {
-  font-size: 1.5em;
+  font-size: 1.5vw;
   position:relative;
   line-height: 1.7em;
+  margin-top: 0;
   margin-right: 10vw;
   margin-left: 5vw;
   display: block;
   font-family: 'Playfair Display';
   text-align: justify;
 }
-
 
 .projectThree > img {
   max-width: 35w;
@@ -481,18 +446,18 @@ background: white;
   position: relative;
   display: block;
   float: right;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  margin-right: 2vw;
-  margin-left: 2vw;
-  border: 5px solid rgba(51,51,51,1);
+  margin-bottom: 10px;
+  margin-right: 2px;
+  margin-left: 20px;
+  border: solid 2px palevioletred;
   border-radius: 5px;
 }
 
 .projectThree >p{
-  font-size: 1.5em;
+  font-size: 1.5vw;
   position:relative;
   line-height: 1.7em;
+  margin-top: 0;
   margin-right: 10vw;
   margin-left: 5vw;
   display: block;
@@ -500,21 +465,9 @@ background: white;
   text-align: justify;
 }
 
-.projectLink  {
-  width: 40%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  text-align: center;
-}
-
 .projectLink {
   color: black;
-  padding: 2vh;
-  font-size: 2vw;
-  position:relative;
-  margin-right: 20vw;
-  margin-left: 15vw;
-  display: block;
-  font-family: 'Playfair Display';
-  text-align: center;
+  padding: 1em;
+  display: inline-block;
+
 }

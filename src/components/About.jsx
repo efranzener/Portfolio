@@ -1,6 +1,5 @@
 import React from 'react';
 import myPic from '../assets/myPic.jpg'
-
 import { Icon } from 'semantic-ui-react';
 import python from '../assets/icons/pythonLogo.png';
 import postgreSQL from '../assets/icons/PostgreSQL.png';
@@ -45,12 +44,12 @@ function AboutPage () {
               </div>
               <br/>
               <div>
-                <Icon name='html5' size='big' color='orange'/>
-                <Icon name='js' size='big' color='yellow'/>
-                <Icon name='css3 alternate' size='big' color='blue'/>
-                <Icon name='react' size='big' color='blue'/>
-                <Icon name='git' size='big' color='black'/>
-                <Icon name='github' size='big' color='black'/>
+                <Icon name='html5' size='large' color='orange'/>
+                <Icon name='js' size='large' color='yellow'/>
+                <Icon name='css3 alternate' size='large' color='blue'/>
+                <Icon name='react' size='large' color='blue'/>
+                <Icon name='git' size='large' color='black'/>
+                <Icon name='github' size='large' color='black'/>
               </div>
           </div>
             <br></br>
