@@ -5,7 +5,7 @@
 // import vowvow from '../src/assets/vowvow.png';
 // import movieRatingApp from '../../assets/movieRatingApp.png';
 
-import vowvow from './assets/vowvoW.jpg';
+import vowvow from './assets/vowvow.jpg';
 import movieRatingApp from './assets/movieRatingApp.jpg';
 import homepagePic from './assets/homepagePic.jpg';
 

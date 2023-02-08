@@ -1,5 +1,5 @@
 import React from 'react';
-import ResumeEtyene from '../assets/ResumeEtyene.pdf';
+import ResumeEtyene from '../assets/resumeEtyene.pdf';
 
 function Resume() {
 

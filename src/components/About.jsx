@@ -25,7 +25,7 @@ function AboutPage () {
             Fast forward to 2022, with a diverse background that includes childcare, customer services and legal jobs, I believe everything I have previously done, small or has been a crucial stepping stone to where I am today.
             <br/>
             <br/>
-            Aside from self-studying, most of my coding skills were built during my time as a bootcamp student at the Full-Stack Software Engineer Program at Hackbright. 
+            Aside from self-studying, most of my coding skills were built during my time as a bootcamp student at the Full-Stack Software Engineer Program at <a href="https://hackbrightacademy.com">Hackbright</a>.
             <br/>
             <br/>
             What excites me the most about working as a software engineer is the ability it gives me to design and build technology that solves real problems and make people’s lives easier, in a small and big scale.  
